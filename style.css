@@ -9,12 +9,20 @@ body{
 
 /*--Header--*/
 header{
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    transition: box-shadow 0.3s ease; /* Smooth transition */
 }
+html:not(:root) heading {
+    box-shadow: 0px 10px 15px -5px rgba(99, 188, 252, 0.6); /* Only at the bottom */
+}
+
 header .logo{
     width: 200px;
     display: flex;
@@ -101,6 +109,7 @@ header .nav ul li a{
 }
 /*--Hover--*/
 header .nav ul li a:hover{
+    background-color: #fff;
     color: #8490ff;
 }
 header ul .hhh1 .unorder ul .unorder2 ul{
@@ -115,6 +124,7 @@ header ul .hhh1 .unorder ul .unorder2 ul{
 }
 /*--Hover--*/
 header ul .hhh1 .unorder .hhh2:hover ul{
+    background-color: #fff;
     opacity: 1; /* Make it visible */
     visibility: visible; /* Show it */
 }
@@ -123,9 +133,79 @@ header ul .hhh1 .unorder .hhh2:hover ul{
 
 
 /*--Section--*/
+section{
+    top:0;
+    display: flex;
+    font-family: Arial;
+}
 section .home{
     width: 100%;
-    height: 680px;
-    background-color: #f9f9ff;
+    height: 750px;
+    background-color: #f9f9ff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .home .text1{
+    width: 570px;
+    height: 400px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+}
+section .home .text1 h5{
+    text-transform: uppercase;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    opacity: .7;
+}
+section .home .text1 h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: -5px;
+    color: #222222;
+}
+section .home .text1 p{
+    line-height: 25px;
+    margin-top: -28px;
+    opacity: .5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15.3px;
+}
+section .home .text1 a{
+    text-align: center;
+    width: 163px;
+    height: 29px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #8391ff 10%,#63bcfc);
+    font-size: 14px;
+    color: white;
+    padding-top: 12px;
+    font-weight: bold;
+}
+/*--Hover--*/
+section .home .text1 a:hover{
+    box-shadow: 0px 10px 20px -5px rgba(53, 54, 54, 0.6); /* Adjust the shadow properties as needed */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+section .home .image1{
+    margin-right: 73px;
+    margin-top: 140px;
 }
 /*--Section--*/
+
+
+
+/*--SectionAA--*/
+/*
+.sectionAA{
+    background-color: yellow;
+    width: 100%;
+    height: 500px;
+}
+/*--SectionAA--*/
