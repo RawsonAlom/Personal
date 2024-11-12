@@ -17,7 +17,9 @@ header{
     background-color: #fff;
     z-index: 999;
     top: 0;
+    box-shadow: 1px 1px 10px rgb(204, 209, 215);
     transition: box-shadow 0.3s ease; /* Smooth transition */
+
 }
 html:not(:root) heading {
     box-shadow: 0px 10px 15px -5px rgba(99, 188, 252, 0.6); /* Only at the bottom */
@@ -235,6 +237,7 @@ section .home .image1{
     font-size: 36px;
     letter-spacing: -2px;
     text-transform: uppercase;
+    color: #222222;
 }
 .sectionAA .About .text2 p{
     line-height: 25px;
@@ -249,6 +252,7 @@ section .home .image1{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .sectionAA .About .text2 .button:hover{
     box-shadow: 0px 10px 20px -5px rgba(53, 54, 54, 0.6); /* Adjust the shadow properties as needed */
@@ -257,7 +261,8 @@ section .home .image1{
 .sectionAA .About .text2 .button a{
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 
 }
 
@@ -266,7 +271,6 @@ section .home .image1{
 
 
 /*--SectionBB--*/
-/*--
 .sectionBB{
     background-color: aquamarine;
     width: 100%;
