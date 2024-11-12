@@ -272,8 +272,92 @@ section .home .image1{
 
 /*--SectionBB--*/
 .sectionBB{
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     width: 100%;
-    height: 900px;
+    height: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.sectionBB .services{
+    width: 100%;
+    height: 700px;
+    /*background-color: gray;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*--Logo--*/
+.sectionBB .services .logo{
+    width: 670px;
+    height: 200px;
+    text-align: center;
+    /*background-color: yellow;*/
+}
+.sectionBB .services .logo h1{
+    font-size: 35px;
+    letter-spacing: .7px;
+    color: #222222;
+}
+.sectionBB .services .logo p{
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: .5;
+    margin-top: -15px;
+}
+/*--Logo--*/
+
+/*--Items--*/
+.sectionBB .services .items{
+    width: 1250px;
+    height: 450px;
+    /*background-color: #8490ff;*/
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sectionBB .services .items .item-box{
+    width: 310px;
+    height: 170px;
+    background-color: #fff;
+    margin-right: 60px;
+    text-align: center;
+}
+.sectionBB .services .items .item-box i{
+    font-size: 25px;
+    color: #222222;
+    transition: .2s;
+}
+.sectionBB .services .items .item-box a{
+    text-decoration: none;
+    color: #222222;
+    transition: .2s;
+}
+/*--Hover--*/
+.sectionBB .services .items .item-box:hover i{
+    color: #63bcfc;
+}
+.sectionBB .services .items .item-box:hover a{
+    color: #6673eb;
+}
+.sectionBB .services .items .item-box p{
+    line-height: 23px;
+    opacity: .4;
+}
+/*--Items--*/
 /*--SectionBB--*/
+
+
+
+/*--SectionCC--*/
+/*
+.sectionCC{
+    background-color: rgb(34, 255, 0);
+    width: 100%;
+    height: 320px;
+}
+/*--SectionCC--*/
