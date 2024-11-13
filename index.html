@@ -187,28 +187,166 @@
     </div>
 </section>
 <!--SectionCC-->
+
+
+
+<!--SectionDD-->
+<section class="sectionDD">
+    <div class="logo">
+        <h1>Our Latest Featured Projects</h1>
+        <p>Who are in extremely love with eco friendly system.</p>
+    </div>
+    <div class="main">
+        <div class="top">
+            <ul>
+                <li><a href="#" style="color: #5c67c4;">All</a></li>
+                <li><a href="#" class="aa1">vector</a></li>
+                <li><a href="#" class="aa1">raster</a></li>
+                <li><a href="#" class="aa1">UI/UX</a></li>
+                <li><a href="#" class="aa1">painting</a></li>
+                
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="icon">
+                <div class="H">
+                    <a href="#"><img src="images/preview.png.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="icon2">
+                <div class="H">
+                    <a href="#"><img src="images/preview.png.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="icon3">
+                <div class="H">
+                    <a href="#"><img src="images/preview.png.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="icon4">
+                <div class="H">
+                    <a href="#"><img src="images/preview.png.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="icon5">
+                <div class="H">
+                    <a href="#"><img src="images/preview.png.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="icon6">
+                <div class="H">
+                    <a href="#"><img src="images/preview.png.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SectionDD-->
+
+
+
+<!--SectionEE-->
+<section class="sectionEE">
+    <div class="logo">
+        <h1>Client’s Feedback About Me</h1>
+        <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+    </div>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="img">
+                <img src="images/user2.webp" alt="">
+                <div class="new">
+                    <p>
+                        A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However. </p>
+                    <h3><a href="#">Carolyn Craing</a></h3>
+                    <h4>CEO at Facebook</h4>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/user2.webp" alt="">
+                <div class="new">
+                    <p>
+                        A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However. </p>
+                    <h3><a href="#">Carolyn Craing</a></h3>
+                    <h6>CEO at Facebook</h6>
+                </div>
+            </div>
+            <!-- aro image add korte chanle ekhane add korun -->
+        </div>
+        <div class="buttons">
+            <button class="arrow left" onclick="prevSlide()">❮</button>
+            <button class="arrow right" onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+    
+</section>
+<!--SectionEE-->
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.counter');
-  
-    counters.forEach(counter => {
-      const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const current = +counter.innerText;
-        const increment = target / 60; // Adjust to control speed
-  
-        if (current < target) {
-          counter.innerText = Math.ceil(current + increment);
-          setTimeout(updateCounter, 20); // Adjust to control refresh rate
-        } else {
-          counter.innerText = target;
-        }
-      };
-  
-      updateCounter();
+    let isCountingStarted = false; // Ensure counting only starts once
+
+    const startCounting = () => {
+        counters.forEach(counter => {
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const current = +counter.innerText;
+                const increment = target / 60; // Adjust to control speed
+
+                if (current < target) {
+                    counter.innerText = Math.ceil(current + increment);
+                    setTimeout(updateCounter, 20); // Adjust to control refresh rate
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        });
+    };
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !isCountingStarted) {
+                startCounting(); // Start counting when the container is in view
+                isCountingStarted = true; // Ensure it only runs once
+                observer.disconnect(); // Stop observing after starting the count
+            }
+        });
+    }, {
+        threshold: 0.5 // Adjust the visibility percentage as needed
     });
-  });
-  
+
+    const counterSection = document.querySelector('.counter-container'); // Replace with your section's class or ID
+    observer.observe(counterSection);
+});
+
+</script>
+
+<script>
+let currentIndex = 0;
+
+function showSlide(index) {
+    const slider = document.querySelector('.slider');
+    const totalSlides = slider.children.length;
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
+    }
+    slider.style.transform = `translateX(-${currentIndex * 300}px)`; // 300px div er width
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
 </script>
 
 

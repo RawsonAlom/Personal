@@ -382,3 +382,416 @@ section .home .image1{
     font-size: 15px;
 }
 /*--SectionCC--*/
+
+
+
+/*--SectionDD--*/
+.sectionDD{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sectionDD .logo{
+    width: 700px;
+    height: 150px;
+    text-align: center;
+}
+.sectionDD .logo h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #222222;
+}
+.sectionDD .logo p{
+    opacity: .5;
+}
+.sectionDD .main{
+    position: relative;
+    width: 80%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*--Top--*/
+.sectionDD .main .top{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDD .main .top ul{
+    display: flex;
+    list-style: none;
+}
+.sectionDD .main .top ul li{
+    padding: 13px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.sectionDD .main .top ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    color: #222222;
+    cursor: pointer;
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+
+/*
+.sectionDD .main .top ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #222222;
+    opacity: .8;
+}*/
+.sectionDD .main .top ul li .aa1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #222222; /* Color of the underline */
+    transition:  0.3s ease; /* Animation for the loading effect */
+}
+
+.sectionDD .main .top ul li .aa1:hover::after {
+    width: 40%; /* Expands the underline on hover */
+}
+
+
+
+/*--Top--*/
+.sectionDD .main .icons{
+    position: relative;
+    width: 90%;
+    height: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--Icon--*/
+.sectionDD .main .icons .icon {
+    background-color: white;
+    width: 27%;
+    height: 38%;
+    background-size: cover; /* পুরো এলিমেন্ট কভার করতে */
+    background-repeat: no-repeat;
+    background-image: image-set(
+        url('images/p1.jpg.webp') type("image/webp"),
+        url('images/p1.jpg') type("image/jpeg")
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/*--Icon2--*/
+.sectionDD .main .icons .icon2 {
+    background-color: white;
+    width: 27%;
+    height: 38%;
+    background-size: cover; /* পুরো এলিমেন্ট কভার করতে */
+    background-repeat: no-repeat;
+    background-image: image-set(
+        url('images/p2.jpg.webp') type("image/webp"),
+        url('images/p2.jpg') type("image/jpeg")
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/*--Icon3--*/
+.sectionDD .main .icons .icon3 {
+    background-color: white;
+    width: 27%;
+    height: 38%;
+    background-size: cover; /* পুরো এলিমেন্ট কভার করতে */
+    background-repeat: no-repeat;
+    background-image: image-set(
+        url('images/p3.jpg.webp') type("image/webp"),
+        url('images/p3.jpg') type("image/jpeg")
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/*--Icon4--*/
+.sectionDD .main .icons .icon4 {
+    background-color: white;
+    width: 27%;
+    height: 38%;
+    background-size: cover; /* পুরো এলিমেন্ট কভার করতে */
+    background-repeat: no-repeat;
+    background-image: image-set(
+        url('images/p4.jpg.webp') type("image/webp"),
+        url('images/p4.jpg') type("image/jpeg")
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/*--Icon5--*/
+.sectionDD .main .icons .icon5 {
+    background-color: white;
+    width: 27%;
+    height: 38%;
+    background-size: cover; /* পুরো এলিমেন্ট কভার করতে */
+    background-repeat: no-repeat;
+    background-image: image-set(
+        url('images/p5.jpg.webp') type("image/webp"),
+        url('images/p5.jpg') type("image/jpeg")
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/*--Icon6--*/
+.sectionDD .main .icons .icon6 {
+    width: 27%;
+    height: 38%;
+    background-size: cover; /* পুরো এলিমেন্ট কভার করতে */
+    background-repeat: no-repeat;
+    background-image: url(images/p6.webp);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+/*--Hover--*/
+.sectionDD .main .icons .icon .H{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #6673eb 15%, #63bcfc);
+    transition: .2s .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.sectionDD .main .icons .icon:hover .H{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+/*--Hover2--*/
+.sectionDD .main .icons .icon2 .H{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6673eb;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6673eb 15%, #63bcfc);
+    transition: .2s .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDD .main .icons .icon2:hover .H{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+/*--Hover3--*/
+.sectionDD .main .icons .icon3 .H{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6673eb;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6673eb 15%, #63bcfc);
+    transition: .2s .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDD .main .icons .icon3:hover .H{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+/*--Hover4--*/
+.sectionDD .main .icons .icon4 .H{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6673eb;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6673eb 15%, #63bcfc);
+    transition: .2s .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDD .main .icons .icon4:hover .H{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+/*--Hover5--*/
+.sectionDD .main .icons .icon5 .H{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6673eb;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6673eb 15%, #63bcfc);
+    transition: .2s .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDD .main .icons .icon5:hover .H{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+/*--Hover6--*/
+.sectionDD .main .icons .icon6 .H{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6673eb;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6673eb 15%, #63bcfc);
+    transition: .2s .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDD .main .icons .icon6:hover .H{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+/*--SectionDD--*/
+
+
+
+/*--SectionEE--*/
+.sectionEE{
+    background-color: #f5f6f9;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sectionEE .logo{
+    padding: 100px;
+    margin-top: -50px;
+}
+.sectionEE .logo h1{
+    font-size: 38px;
+    color: #222222;
+}
+.sectionEE .logo p{
+    font-size: 15px;
+    opacity: .7;
+}
+.sectionEE .slider-container {
+    position: relative;
+    width: 1200px; /* apnar proyojon moto width set korun */
+    overflow: hidden;
+    display: flex;
+}
+
+.sectionEE .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 97%;
+}
+
+.sectionEE .slider .img {
+    display: flex;
+    margin: 20px;
+    width: 500px;/* div er width er shathe mil rakhte hobe */
+    height: 200px;
+    background-color: white;
+}
+.sectionEE .slider .img .new:hover h3 a{
+    transition: .3s;
+    color: #63bcfc;
+}
+.sectionEE .slider .img img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.sectionEE .slider .img .new{
+    text-align: left;
+    background-color: white;
+}
+.sectionEE .slider .img .new h3 a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+.sectionEE .slider .img .new h4{
+    font-weight: lighter;
+    font-size: small;
+}
+.sectionEE .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionEE .arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sectionEE .left {
+    left: 10px;
+}
+
+.sectionEE.right {
+    right: 10px;
+}
+
+/*--SectionEE--*/
