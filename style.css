@@ -895,3 +895,79 @@ section .home .image1{
 }
 /*--Price--*/
 /*SectionFF*/
+
+
+
+/*SectionGG*/
+.sectionGG{
+    background-color: #f0f3f5;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionGG .logo{
+    margin-top: 80px;
+    text-align: center;
+    width: 800px;
+}
+.sectionGG .logo h1{
+    font-size: 37px;
+    font-weight: bold;
+    color: #222222;
+}
+.sectionGG .logo p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    opacity: .7;
+}
+.sectionGG .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1130px;
+    height: 600px;
+}
+.sectionGG .items .item1{
+    margin: 15px;
+    width: 550px;
+    height: 430px;
+}
+.sectionGG .items .item1:hover img{
+    width: 350px;
+}
+.sectionGG .items .item1:hover h2{
+    color: #6673eb;
+}
+.sectionGG .items .item1 img{
+    width: 100%;
+    transition: .3s;
+}
+.sectionGG .items .item1 .hhh{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+.sectionGG .items .item1 h2{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #222222;
+    transition: .3s;
+}
+.sectionGG .items .item1 p{
+    opacity: .5;
+}
+/*SectionGG*/
+
+
+
+/*SectionHH/
+.sectionHH{
+    background-color: yellow;
+    width: 100%;
+    height: 637px;
+}
+/*SectionHH*/
